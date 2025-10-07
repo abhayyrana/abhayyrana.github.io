@@ -1,6 +1,8 @@
 {
   "name": "abhayyrana",
   "version": "1.0.0",
+  "type": "module",
+  "description": "Portfolio website of Abhay Rana, a web developer and designer.",
   "private": true,
   "homepage": "https://abhayyrana.github.io/abhayyrana",
   "scripts": {
