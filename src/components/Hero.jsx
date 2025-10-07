@@ -1,17 +1,23 @@
 import React from "react";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown } from "lucide-react"
 
 const Hero = () => {
   const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Background gradients */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse" style={{ top: "20%", left: "10%" }} />
-        <div className="absolute w-96 h-96 bg-pink-500/30 rounded-full blur-3xl animate-pulse" style={{ bottom: "20%", right: "10%" }} />
+        <div
+          className="absolute w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse"
+          style={{ top: "20%", left: "10%" }}
+        />
+        <div
+          className="absolute w-96 h-96 bg-pink-500/30 rounded-full blur-3xl animate-pulse"
+          style={{ bottom: "20%", right: "10%" }}
+        />
       </div>
 
       <div className="relative z-10 text-center px-4 animate-fade-in">
@@ -30,13 +36,26 @@ const Hero = () => {
         <p className="text-lg text-gray-400 mb-8">K.J. Somaiya College of Engineering, Mumbai</p>
 
         <div className="flex justify-center gap-4 mb-12">
-          <a href="https://github.com/abhayyrana" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-all hover:scale-110">
+          <a
+            href="https://github.com/abhayyrana"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-all hover:scale-110"
+          >
             <Github size={24} />
           </a>
-          <a href="https://www.linkedin.com/in/abhayyrana/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-gray-800 hover:bg-blue-600 transition-all hover:scale-110">
+          <a
+            href="https://www.linkedin.com/in/abhayyrana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-gray-800 hover:bg-blue-600 transition-all hover:scale-110"
+          >
             <Linkedin size={24} />
           </a>
-          <a href="mailto:abhay.rana@example.com" className="p-3 rounded-full bg-gray-800 hover:bg-pink-600 transition-all hover:scale-110">
+          <a
+            href="mailto:abhay.rana@example.com"
+            className="p-3 rounded-full bg-gray-800 hover:bg-pink-600 transition-all hover:scale-110"
+          >
             <Mail size={24} />
           </a>
         </div>
@@ -46,7 +65,7 @@ const Hero = () => {
         </button>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

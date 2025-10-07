@@ -1,38 +1,39 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+"use client"
+import { useState, useEffect } from "react"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+import About from "./components/About"
+import Projects from "./components/Projects"
+import Skills from "./components/Skills"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(true);
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [activeSection, setActiveSection] = useState("home");
+  const [darkMode, setDarkMode] = useState(true)
+  const [scrollProgress, setScrollProgress] = useState(0)
+  const [activeSection, setActiveSection] = useState("home")
 
   useEffect(() => {
     const handleScroll = () => {
-      const total = document.documentElement.scrollHeight - window.innerHeight;
-      setScrollProgress((window.scrollY / total) * 100);
+      const total = document.documentElement.scrollHeight - window.innerHeight
+      setScrollProgress((window.scrollY / total) * 100)
 
-      const sections = ["home", "about", "projects", "skills", "contact"];
+      const sections = ["home", "about", "projects", "skills", "contact"]
       for (const section of sections) {
-        const element = document.getElementById(section);
+        const element = document.getElementById(section)
         if (element) {
-          const rect = element.getBoundingClientRect();
+          const rect = element.getBoundingClientRect()
           if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section);
-            break;
+            setActiveSection(section)
+            break
           }
         }
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -52,7 +53,7 @@ const App = () => {
       <Contact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
