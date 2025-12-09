@@ -28,7 +28,7 @@ body.light {
     top: 0;
     left: 0;
     height: 4px;
-    background: linear-gradient(to right, #a855f7, #ec4899, #3b82f6);
+    background: linear-gradient(to right, #0ea5e9, #22c55e, #facc15);
     z-index: 1000;
     transition: width 0.1s ease;
 }
@@ -64,7 +64,7 @@ body.light nav {
 .logo {
     font-size: 1.25rem;
     font-weight: bold;
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -91,7 +91,7 @@ body.light nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
     transition: width 0.3s ease;
 }
 
@@ -106,7 +106,7 @@ body.light .nav-links a {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #a855f7;
+    color: #0ea5e9;
 }
 
 .theme-toggle {
@@ -152,23 +152,23 @@ body.light .theme-toggle:hover {
 }
 
 .orb-1 {
-    background: rgba(168, 85, 247, 0.3);
+    background: rgba(14, 165, 233, 0.35);
     top: 20%;
     left: 10%;
 }
 
 body.light .orb-1 {
-    background: rgba(168, 85, 247, 0.4);
+    background: rgba(14, 165, 233, 0.45);
 }
 
 .orb-2 {
-    background: rgba(236, 72, 153, 0.3);
+    background: rgba(34, 197, 94, 0.35);
     bottom: 20%;
     right: 10%;
 }
 
 body.light .orb-2 {
-    background: rgba(236, 72, 153, 0.4);
+    background: rgba(34, 197, 94, 0.45);
 }
 
 @keyframes pulse {
@@ -192,7 +192,7 @@ body.light .orb-2 {
     height: 128px;
     margin: 0 auto 1.5rem;
     padding: 4px;
-    background: linear-gradient(to bottom right, #a855f7, #ec4899);
+    background: linear-gradient(to bottom right, #0ea5e9, #22c55e);
     border-radius: 50%;
     animation: spin 8s linear infinite;
 }
@@ -231,7 +231,7 @@ h1 {
 
 .subtitle {
     font-size: 1.5rem;
-    background: linear-gradient(to right, #c084fc, #f9a8d4);
+    background: linear-gradient(to right, #38bdf8, #facc15);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -249,7 +249,7 @@ h1 {
 }
 
 body.light .subtitle {
-    background: linear-gradient(to right, #9333ea, #db2777);
+    background: linear-gradient(to right, #0284c7, #22c55e);
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -267,7 +267,7 @@ body.light .subtitle {
 }
 
 .description a:hover {
-    color: #a855f7;
+    color: #0ea5e9;
 }
 
 body.light .description {
@@ -296,12 +296,12 @@ body.light .social-btn {
 }
 
 .social-btn:hover {
-    background: #a855f7;
+    background: #0ea5e9;
     transform: scale(1.1);
 }
 
 body.light .social-btn:hover {
-    background: #a855f7;
+    background: #0ea5e9;
 }
 
 .scroll-down {
@@ -332,7 +332,7 @@ section {
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -395,12 +395,12 @@ body.light .card {
 }
 
 .card-icon {
-    color: #c084fc;
+    color: #38bdf8;
     margin-bottom: 1rem;
 }
 
 body.light .card-icon {
-    color: #9333ea;
+    color: #22c55e;
 }
 
 .card-header h3 {
@@ -449,9 +449,9 @@ body.light .card-content p {
     min-height: auto;
     opacity: 1;
     z-index: 10;
-    box-shadow: 0 20px 60px rgba(168, 85, 247, 0.4),
-                0 0 40px rgba(168, 85, 247, 0.2);
-    border-color: rgba(168, 85, 247, 0.5);
+    box-shadow: 0 20px 60px rgba(14, 165, 233, 0.4),
+                0 0 40px rgba(14, 165, 233, 0.2);
+    border-color: rgba(14, 165, 233, 0.6);
 }
 
 .card.expand .card-content {
@@ -469,7 +469,7 @@ body.light .card-content p {
 .timeline-item {
     background: rgba(31, 41, 55, 0.6);
     border: 1px solid #374151;
-    border-left: 4px solid #a855f7;
+    border-left: 4px solid #0ea5e9;
     border-radius: 1rem;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -480,28 +480,28 @@ body.light .card-content p {
 body.light .timeline-item {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid #e5e7eb;
-    border-left: 4px solid #a855f7;
+    border-left: 4px solid #0ea5e9;
 }
 
 .timeline-item:hover {
     transform: translateX(10px);
-    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
 }
 
 .timeline-item h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #a855f7;
+    color: #0ea5e9;
 }
 
 .timeline-date {
     display: inline-block;
-    background: rgba(168, 85, 247, 0.2);
+    background: rgba(14, 165, 233, 0.16);
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.875rem;
     margin-bottom: 1rem;
-    color: #c084fc;
+    color: #38bdf8;
 }
 
 .timeline-item p {
@@ -533,7 +533,7 @@ body.light .timeline-item li {
     content: '▹';
     position: absolute;
     left: 0;
-    color: #a855f7;
+    color: #0ea5e9;
     font-weight: bold;
 }
 
@@ -569,7 +569,7 @@ body.light .project-card {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
@@ -581,8 +581,8 @@ body.light .project-card {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
-    border-color: rgba(168, 85, 247, 0.5);
+    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.35);
+    border-color: rgba(14, 165, 233, 0.6);
 }
 
 .project-header {
@@ -594,7 +594,7 @@ body.light .project-card {
 
 .project-icon {
     font-size: 2.5rem;
-    color: #a855f7;
+    color: #0ea5e9;
     transition: transform 0.3s ease;
 }
 
@@ -610,7 +610,7 @@ body.light .project-card {
 }
 
 .github-link:hover {
-    color: #a855f7;
+    color: #0ea5e9;
     transform: scale(1.2);
 }
 
@@ -641,23 +641,23 @@ body.light .project-card p {
 }
 
 .tag {
-    background: rgba(168, 85, 247, 0.2);
-    color: #c084fc;
+    background: rgba(14, 165, 233, 0.16);
+    color: #38bdf8;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.875rem;
-    border: 1px solid rgba(168, 85, 247, 0.3);
+    border: 1px solid rgba(14, 165, 233, 0.35);
     transition: all 0.3s ease;
 }
 
 body.light .tag {
     background: rgba(168, 85, 247, 0.1);
-    color: #9333ea;
-    border: 1px solid rgba(168, 85, 247, 0.2);
+    color: #22c55e;
+    border: 1px solid rgba(14, 165, 233, 0.2);
 }
 
 .tag:hover {
-    background: rgba(168, 85, 247, 0.3);
+    background: rgba(14, 165, 233, 0.35);
     transform: translateY(-2px);
 }
 
@@ -669,7 +669,7 @@ body.light .tag {
     display: inline-flex;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
     color: white;
     text-decoration: none;
     border-radius: 9999px;
@@ -679,7 +679,7 @@ body.light .tag {
 
 .view-more-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 15px 35px rgba(14, 165, 233, 0.4);
 }
 
 /* Skills */
@@ -709,8 +709,8 @@ body.light .skill-badge {
 
 .skill-badge:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3);
-    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.35);
+    border-color: rgba(14, 165, 233, 0.7);
 }
 
 /* Contact */
@@ -751,7 +751,7 @@ body.light textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #a855f7;
+    border-color: #0ea5e9;
     box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
 }
 
@@ -763,7 +763,7 @@ textarea {
 .submit-btn {
     width: 100%;
     padding: 1rem;
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
     border: none;
     border-radius: 0.5rem;
     color: white;
@@ -775,7 +775,7 @@ textarea {
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.5);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.6);
 }
 
 /* Footer */
