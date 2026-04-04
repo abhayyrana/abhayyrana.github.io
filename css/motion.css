@@ -285,9 +285,6 @@ body.light .timeline-content li {
 }
 
 /* Set icon URL from data-icon attribute */
-.skill-badge[data-icon] {
-    --icon-url: url(attr(data-icon));
-}
 
 /* Fallback: Use data attribute to set background */
 .skill-badge[data-icon]::before {
