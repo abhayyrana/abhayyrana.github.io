@@ -360,12 +360,12 @@ body.light .section-desc {
     gap: 1.5rem;
     max-width: 64rem;
     margin: 0 auto;
-    align-items: start;
+    align-items: stretch;
 }
 
 .card {
-    background: rgba(31, 41, 55, 0.6);
-    border: 1px solid #374151;
+    background: rgba(31, 41, 55, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
     padding: 2rem;
     backdrop-filter: blur(10px);
@@ -377,6 +377,7 @@ body.light .section-desc {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.light .card {
@@ -435,7 +436,8 @@ body.light .card-content p {
 /* Normal state - empty boxes with only headers visible */
 .card.shrink {
     min-height: 140px;
-    opacity: 0.5;
+    opacity: 0.7;
+    filter: blur(1px);
 }
 
 .card.shrink .card-content {
@@ -446,11 +448,12 @@ body.light .card-content p {
 
 /* Expanded state - show full content */
 .card.expand {
-    min-height: auto;
+    min-height: 100%;
     opacity: 1;
     z-index: 10;
-    box-shadow: 0 20px 60px rgba(14, 165, 233, 0.4),
-                0 0 40px rgba(14, 165, 233, 0.2);
+    transform: scale(1.02);
+    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.3),
+                0 0 30px rgba(14, 165, 233, 0.1);
     border-color: rgba(14, 165, 233, 0.6);
 }
 
@@ -680,6 +683,121 @@ body.light .tag {
 .view-more-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(14, 165, 233, 0.4);
+}
+
+/* Certificates Section */
+#certificates {
+    padding-bottom: 2rem;
+}
+
+.brand-group {
+    margin-bottom: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+body.light .brand-header {
+    color: #111827;
+}
+
+.brand-icon {
+    color: #0ea5e9;
+}
+
+.certificates-scroll {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 1rem 0.5rem 2rem;
+    scrollbar-width: thin;
+    scrollbar-color: #0ea5e9 transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+.certificates-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.certificates-scroll::-webkit-scrollbar-track {
+    background: rgba(31, 41, 55, 0.3);
+    border-radius: 10px;
+}
+
+.certificates-scroll::-webkit-scrollbar-thumb {
+    background: #0ea5e9;
+    border-radius: 10px;
+}
+
+.cert-card {
+    flex: 0 0 300px;
+    background: rgba(31, 41, 55, 0.6);
+    border: 1px solid #374151;
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body.light .cert-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #e5e7eb;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.35);
+    border-color: #0ea5e9;
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    color: #facc15;
+    margin-bottom: 1.5rem;
+}
+
+.cert-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+body.light .cert-card h4 {
+    color: #111827;
+}
+
+.cert-card p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+body.light .cert-card p {
+    color: #4b5563;
+}
+
+.cert-date {
+    margin-top: auto;
+    background: rgba(14, 165, 233, 0.16);
+    color: #38bdf8;
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 /* Skills */
