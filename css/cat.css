@@ -18,51 +18,50 @@
 
 /* ===========================
    ENHANCED PIXEL ART CATS
-   Better proportions and features
    =========================== */
 
 /* White Cat - Shows in DARK mode */
 .white-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23f5f5f5'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23f5f5f5'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23f5f5f5'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23f5f5f5'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23f5f5f5'/%3E%3C!-- Eyes --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23fff'/%3E%3C!-- Whiskers --%3E%3Crect x='6' y='17' width='4' height='1' fill='%23ccc'/%3E%3Crect x='22' y='17' width='4' height='1' fill='%23ccc'/%3E%3C!-- Nose/Mouth --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23f5f5f5'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23f5f5f5'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23f5f5f5'/%3E%3C/svg%3E");
 }
 
 /* Orange Tabby Cat - Shows in DARK mode */
 .orange-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23ff9955'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ff7733'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23ff9955'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ff7733'/%3E%3C!-- Head with stripes --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23ff9955'/%3E%3Crect x='11' y='12' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='19' y='12' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='12' y='13' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='18' y='13' width='2' height='1' fill='%23dd5522'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23ffee00'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23ffee00'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body with stripes --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23ff9955'/%3E%3Crect x='12' y='22' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='18' y='22' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='13' y='24' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='17' y='24' width='2' height='1' fill='%23dd5522'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23ff9955'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23ff9955'/%3E%3Crect x='22' y='23' width='1' height='1' fill='%23dd5522'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23ffccaa'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23ffccaa'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23ff9955'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ff7733'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23ff9955'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ff7733'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23ff9955'/%3E%3C!-- Eyes --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23fff'/%3E%3C!-- Whiskers --%3E%3Crect x='6' y='17' width='4' height='1' fill='%23dd5522'/%3E%3Crect x='22' y='17' width='4' height='1' fill='%23dd5522'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23ff9955'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23ff9955'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23ff9955'/%3E%3C/svg%3E");
 }
 
 /* Gray Cat - Shows in DARK mode */
 .gray-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23b0b0b0'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23b0b0b0'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23b0b0b0'/%3E%3C!-- Shading --%3E%3Crect x='11' y='12' width='2' height='1' fill='%239a9a9a'/%3E%3Crect x='19' y='12' width='2' height='1' fill='%239a9a9a'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ddff'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ddff'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffaacc'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23b0b0b0'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23b0b0b0'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23b0b0b0'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23e0e0e0'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23e0e0e0'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23b0b0b0'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23b0b0b0'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23b0b0b0'/%3E%3C!-- Eyes --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23fff'/%3E%3C!-- Whiskers --%3E%3Crect x='6' y='17' width='4' height='1' fill='%23999'/%3E%3Crect x='22' y='17' width='4' height='1' fill='%23999'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffaacc'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23b0b0b0'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23b0b0b0'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23b0b0b0'/%3E%3C/svg%3E");
 }
 
 /* Black Cat - Shows in LIGHT mode */
 body.light .black-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23222'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23333'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23222'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23333'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23222'/%3E%3C!-- Left Eye (glowing) --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23ffee00'/%3E%3Crect x='13' y='16' width='1' height='1' fill='%23000'/%3E%3C!-- Right Eye (glowing) --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23ffee00'/%3E%3Crect x='18' y='16' width='1' height='1' fill='%23000'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23555'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23555'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23222'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23222'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23222'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23444'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23444'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23222'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23333'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23222'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23333'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23222'/%3E%3C!-- Eyes --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23ffee00'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23ffee00'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23fff'/%3E%3C!-- Whiskers --%3E%3Crect x='6' y='17' width='4' height='1' fill='%23444'/%3E%3Crect x='22' y='17' width='4' height='1' fill='%23444'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23222'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23222'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23222'/%3E%3C/svg%3E");
 }
 
 /* Dark Gray Cat - Shows in LIGHT mode */
 body.light .dark-gray-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23555'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23555'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23555'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff88aa'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23555'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23555'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23555'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23777'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23777'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23555'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23555'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23555'/%3E%3C!-- Eyes --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23fff'/%3E%3C!-- Whiskers --%3E%3Crect x='6' y='17' width='4' height='1' fill='%23777'/%3E%3Crect x='22' y='17' width='4' height='1' fill='%23777'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff88aa'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23555'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23555'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23555'/%3E%3C/svg%3E");
 }
 
 /* Brown Tabby Cat - Shows in LIGHT mode */
 body.light .brown-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23885533'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23664422'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23885533'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23664422'/%3E%3C!-- Head with stripes --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23885533'/%3E%3Crect x='11' y='12' width='2' height='1' fill='%23664422'/%3E%3Crect x='19' y='12' width='2' height='1' fill='%23664422'/%3E%3Crect x='12' y='13' width='2' height='1' fill='%23664422'/%3E%3Crect x='18' y='13' width='2' height='1' fill='%23664422'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23aa8800'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23aa8800'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body with stripes --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23885533'/%3E%3Crect x='12' y='22' width='2' height='1' fill='%23664422'/%3E%3Crect x='18' y='22' width='2' height='1' fill='%23664422'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23885533'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23885533'/%3E%3Crect x='22' y='23' width='1' height='1' fill='%23664422'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23aa7744'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23aa7744'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23885533'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23664422'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23885533'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23664422'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23885533'/%3E%3C!-- Eyes --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23fff'/%3E%3C!-- Whiskers --%3E%3Crect x='6' y='17' width='4' height='1' fill='%23664422'/%3E%3Crect x='22' y='17' width='4' height='1' fill='%23664422'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23885533'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23885533'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23885533'/%3E%3C/svg%3E");
 }
 
-/* Default cats in dark mode (use light colored cats) */
+/* Default cats in dark mode */
 .black-cat,
 .dark-gray-cat,
 .brown-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23f5f5f5'/%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ff88'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ff88'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23f5f5f5'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23f5f5f5'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23f5f5f5'/%3E%3Crect x='12' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23f5f5f5'/%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23fff'/%3E%3Crect x='6' y='17' width='4' height='1' fill='%23ccc'/%3E%3Crect x='22' y='17' width='4' height='1' fill='%23ccc'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23f5f5f5'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23f5f5f5'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23f5f5f5'/%3E%3C/svg%3E");
 }
 
 /* ===========================
-   CAT ANIMATIONS & PLACEMENTS
+   ANIMATIONS & PLACEMENTS
    =========================== */
 
-/* Tumbling cat that appears on scroll */
+/* Tumbling cat */
 .tumbling-cat {
     position: fixed;
     top: -60px;
@@ -76,99 +75,58 @@ body.light .brown-cat {
 }
 
 .tumbling-cat.tumble {
-    animation: tumbleDown 3s ease-in forwards;
+    animation: tumbleDown 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes tumbleDown {
-    0% {
-        top: -60px;
-        opacity: 0;
-        transform: rotate(0deg) scale(1);
-    }
-    5% {
-        opacity: 1;
-    }
-    50% {
-        transform: rotate(360deg) scale(1.1);
-    }
-    95% {
-        opacity: 1;
-    }
-    100% {
-        top: calc(100vh + 60px);
-        opacity: 0;
-        transform: rotate(720deg) scale(0.8);
-    }
+    0% { top: -60px; opacity: 0; transform: rotate(0deg) scale(1); }
+    5% { opacity: 1; }
+    50% { transform: rotate(360deg) scale(1.1); }
+    95% { opacity: 1; }
+    100% { top: calc(100vh + 60px); opacity: 0; transform: rotate(720deg) scale(0.8); }
 }
 
-/* Corner cats - sitting in section corners */
+/* Corner cats */
 .corner-cat {
     position: absolute;
     width: 44px;
     height: 44px;
     opacity: 0.75;
-    animation: catBreathe 3.5s ease-in-out infinite;
+    animation: catBreathe 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     z-index: 5;
     transition: all 0.3s ease;
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
 }
 
 .corner-cat:hover {
     opacity: 1;
     transform: scale(1.25);
-    animation: catWag 0.6s ease-in-out 4;
+    animation: catWag 0.6s cubic-bezier(0.4, 0, 0.2, 1) 4;
     cursor: pointer;
 }
 
 @keyframes catBreathe {
-    0%, 100% {
-        transform: scale(1) translateY(0);
-    }
-    50% {
-        transform: scale(1.08) translateY(-3px);
-    }
+    0%, 100% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.08) translateY(-3px); }
 }
 
 @keyframes catWag {
-    0%, 100% {
-        transform: rotate(0deg) scale(1.25);
-    }
-    25% {
-        transform: rotate(-8deg) scale(1.25);
-    }
-    75% {
-        transform: rotate(8deg) scale(1.25);
-    }
+    0%, 100% { transform: rotate(0deg) scale(1.25); }
+    25% { transform: rotate(-8deg) scale(1.25); }
+    75% { transform: rotate(8deg) scale(1.25); }
 }
 
-/* Position variations for corner cats */
-.corner-cat.top-left {
-    top: 30px;
-    left: 30px;
-}
+.corner-cat.top-left { top: 30px; left: 30px; }
+.corner-cat.top-right { top: 30px; right: 30px; }
+.corner-cat.bottom-left { bottom: 30px; left: 30px; }
+.corner-cat.bottom-right { bottom: 30px; right: 30px; }
 
-.corner-cat.top-right {
-    top: 30px;
-    right: 30px;
-}
-
-.corner-cat.bottom-left {
-    bottom: 30px;
-    left: 30px;
-}
-
-.corner-cat.bottom-right {
-    bottom: 30px;
-    right: 30px;
-}
-
-/* Cat in navbar on scroll */
+/* Nav cat */
 .nav-cat {
     display: inline-block;
     width: 24px;
     height: 24px;
     margin-left: 10px;
-    animation: catTailWag 2.5s ease-in-out infinite;
+    animation: catTailWag 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     opacity: 0;
     transform: translateY(8px) scale(0.8);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -181,68 +139,27 @@ body.scrolled .nav-cat {
 }
 
 @keyframes catTailWag {
-    0%, 100% {
-        transform: rotate(-4deg);
-    }
-    50% {
-        transform: rotate(4deg);
-    }
+    0%, 100% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
 }
 
-/* Sleeping cat in footer */
+/* Sleeping cat */
 .sleeping-cat {
     position: relative;
     display: inline-block;
     width: 36px;
     height: 36px;
     margin: 0 10px;
-    animation: catSleep 4.5s ease-in-out infinite;
+    animation: catSleep 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     vertical-align: middle;
-    filter: drop-shadow(0 2px 4px rgba(14, 165, 233, 0.35));
 }
 
 @keyframes catSleep {
-    0%, 100% {
-        transform: translateY(0) scale(1);
-        opacity: 0.9;
-    }
-    50% {
-        transform: translateY(-4px) scale(1.05);
-        opacity: 1;
-    }
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.9; }
+    50% { transform: translateY(-4px) scale(1.05); opacity: 1; }
 }
 
-/* Paw print trail */
-.paw-print {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    pointer-events: none;
-    animation: pawFade 2s ease-out forwards;
-    z-index: 1000;
-}
-
-.paw-sprite {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='12' cy='16' rx='2.4' ry='2.4' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='7.2' cy='13.6' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='16.8' cy='13.6' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='9' cy='9' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='15' cy='9' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3C/svg%3E");
-}
-
-body.light .paw-sprite {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='12' cy='16' rx='2.4' ry='2.4' fill='%2322c55e' opacity='0.6'/%3E%3Cellipse cx='7.2' cy='13.6' rx='1.8' ry='1.8' fill='%2322c55e' opacity='0.6'/%3E%3Cellipse cx='16.8' cy='13.6' rx='1.8' ry='1.8' fill='%2322c55e' opacity='0.6'/%3E%3Cellipse cx='9' cy='9' rx='1.8' ry='1.8' fill='%2322c55e' opacity='0.6'/%3E%3Cellipse cx='15' cy='9' rx='1.8' ry='1.8' fill='%2322c55e' opacity='0.6'/%3E%3C/svg%3E");
-}
-
-@keyframes pawFade {
-    0% {
-        opacity: 0.9;
-        transform: scale(0.6) rotate(-20deg);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(1.4) rotate(10deg);
-    }
-}
-
-/* Surprise cat that peeks from bottom */
+/* Surprise cat */
 .surprise-cat {
     position: fixed;
     bottom: -80px;
@@ -253,195 +170,122 @@ body.light .paw-sprite {
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .surprise-cat.peek {
     bottom: 10px;
     opacity: 1;
-    animation: surpriseBounce 0.5s ease-in-out 2;
+    animation: surpriseBounce 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2;
 }
 
 @keyframes surpriseBounce {
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(-15px);
-    }
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-15px); }
 }
 
-/* ===========================
-   EASTER EGGS
-   =========================== */
-
-/* Spawned cats from triple-clicking avatar */
+/* Spawned cat */
 .spawned-cat {
     position: absolute;
     width: 36px;
     height: 36px;
-    animation: spawnCat 2.5s ease-out forwards;
+    animation: spawnCat 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     pointer-events: none;
     z-index: 1001;
 }
 
 @keyframes spawnCat {
-    0% {
-        transform: scale(0) rotate(0deg);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translateY(-120px);
-        opacity: 0;
-    }
+    0% { transform: scale(0) rotate(0deg); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: scale(1.2) rotate(360deg) translateY(-120px); opacity: 0; }
 }
 
-/* Random spawn directions for variety */
-.spawned-cat:nth-child(1) {
-    animation: spawnCat1 2.5s ease-out forwards;
+/* ===========================
+   NEW NICHE ANIMATIONS
+   =========================== */
+
+/* Tail Flick Cat - For titles */
+.tail-flick-cat {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+    margin-bottom: -4px;
 }
 
-.spawned-cat:nth-child(2) {
-    animation: spawnCat2 2.5s ease-out forwards;
+.tail-flick-cat::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: tailFlick 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-.spawned-cat:nth-child(3) {
-    animation: spawnCat3 2.5s ease-out forwards;
+@keyframes tailFlick {
+    0%, 80%, 100% { transform: rotate(0deg); }
+    85% { transform: rotate(15deg); }
+    90% { transform: rotate(-10deg); }
+    95% { transform: rotate(5deg); }
 }
 
-.spawned-cat:nth-child(4) {
-    animation: spawnCat4 2.5s ease-out forwards;
+/* Keyboard Cat - For contact form */
+.keyboard-cat {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    display: none;
 }
 
-.spawned-cat:nth-child(5) {
-    animation: spawnCat5 2.5s ease-out forwards;
+.keyboard-cat.typing {
+    display: block;
+    animation: typingCat 0.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-.spawned-cat:nth-child(6) {
-    animation: spawnCat6 2.5s ease-out forwards;
+@keyframes typingCat {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-3px) rotate(2deg); }
 }
 
-.spawned-cat:nth-child(7) {
-    animation: spawnCat7 2.5s ease-out forwards;
+/* Peeking Cat - For cards */
+.peeking-cat {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.spawned-cat:nth-child(8) {
-    animation: spawnCat8 2.5s ease-out forwards;
+.card:hover .peeking-cat {
+    transform: translate(-20px, -20px);
 }
 
-@keyframes spawnCat1 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(-100px, -150px);
-        opacity: 0;
-    }
+@keyframes peekSide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-25px); }
 }
 
-@keyframes spawnCat2 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(-70px, -180px);
-        opacity: 0;
-    }
+/* Paw prints */
+.paw-print {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    pointer-events: none;
+    animation: pawFade 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    z-index: 1000;
 }
 
-@keyframes spawnCat3 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(0, -200px);
-        opacity: 0;
-    }
+@keyframes pawFade {
+    0% { opacity: 0.9; transform: scale(0.6) rotate(-20deg); }
+    100% { opacity: 0; transform: scale(1.4) rotate(10deg); }
 }
 
-@keyframes spawnCat4 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(70px, -180px);
-        opacity: 0;
-    }
-}
-
-@keyframes spawnCat5 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(100px, -150px);
-        opacity: 0;
-    }
-}
-
-@keyframes spawnCat6 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(-120px, -100px);
-        opacity: 0;
-    }
-}
-
-@keyframes spawnCat7 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(120px, -100px);
-        opacity: 0;
-    }
-}
-
-@keyframes spawnCat8 {
-    0% {
-        transform: scale(0) rotate(0deg) translate(0, 0);
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.2) rotate(360deg) translate(0, -220px);
-        opacity: 0;
-    }
+.paw-sprite {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='12' cy='16' rx='2.4' ry='2.4' fill='%230ea5e9' opacity='0.7'/%3E%3Cellipse cx='7.2' cy='13.6' rx='1.8' ry='1.8' fill='%230ea5e9' opacity='0.7'/%3E%3Cellipse cx='16.8' cy='13.6' rx='1.8' ry='1.8' fill='%230ea5e9' opacity='0.7'/%3E%3Cellipse cx='9' cy='9' rx='1.8' ry='1.8' fill='%230ea5e9' opacity='0.7'/%3E%3Cellipse cx='15' cy='9' rx='1.8' ry='1.8' fill='%230ea5e9' opacity='0.7'/%3E%3C/svg%3E");
 }
 
 /* ===========================
@@ -449,80 +293,23 @@ body.light .paw-sprite {
    =========================== */
 
 @media (max-width: 768px) {
-    .tumbling-cat {
-        width: 32px;
-        height: 32px;
-    }
-    
-    .corner-cat {
-        width: 36px;
-        height: 36px;
-        opacity: 0.6;
-    }
-    
-    .corner-cat.top-left,
-    .corner-cat.top-right {
-        top: 15px;
-    }
-    
-    .corner-cat.top-left,
-    .corner-cat.bottom-left {
-        left: 15px;
-    }
-    
-    .corner-cat.top-right,
-    .corner-cat.bottom-right {
-        right: 15px;
-    }
-    
-    .corner-cat.bottom-left,
-    .corner-cat.bottom-right {
-        bottom: 15px;
-    }
-    
-    .nav-cat {
-        width: 20px;
-        height: 20px;
-        margin-left: 6px;
-    }
-    
-    .sleeping-cat {
-        width: 28px;
-        height: 28px;
-        margin: 0 6px;
-    }
-    
-    .surprise-cat {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .spawned-cat {
-        width: 28px;
-        height: 28px;
-    }
-    
-    .paw-print {
-        width: 16px;
-        height: 16px;
-    }
+    .tumbling-cat { width: 32px; height: 32px; }
+    .corner-cat { width: 36px; height: 36px; opacity: 0.6; }
+    .corner-cat.top-left, .corner-cat.top-right { top: 15px; }
+    .corner-cat.top-left, .corner-cat.bottom-left { left: 15px; }
+    .corner-cat.top-right, .corner-cat.bottom-right { right: 15px; }
+    .corner-cat.bottom-left, .corner-cat.bottom-right { bottom: 15px; }
+    .nav-cat { width: 20px; height: 20px; margin-left: 6px; }
+    .sleeping-cat { width: 28px; height: 28px; margin: 0 6px; }
+    .surprise-cat { width: 40px; height: 40px; }
+    .spawned-cat { width: 28px; height: 28px; }
+    .paw-print { width: 16px; height: 16px; }
 }
 
 @media (max-width: 480px) {
-    .corner-cat {
-        width: 32px;
-        height: 32px;
-    }
-    
-    .tumbling-cat {
-        width: 28px;
-        height: 28px;
-    }
-    
-    .nav-cat {
-        width: 18px;
-        height: 18px;
-    }
+    .corner-cat { width: 32px; height: 32px; }
+    .tumbling-cat { width: 28px; height: 28px; }
+    .nav-cat { width: 18px; height: 18px; }
 }
 
 /* ===========================
@@ -530,146 +317,20 @@ body.light .paw-sprite {
    =========================== */
 
 @media (prefers-reduced-motion: reduce) {
-    .tumbling-cat,
-    .corner-cat,
-    .nav-cat,
-    .sleeping-cat,
-    .surprise-cat,
-    .spawned-cat,
-    .paw-print {
+    .tumbling-cat, .corner-cat, .nav-cat, .sleeping-cat, .surprise-cat, .spawned-cat, .paw-print, .tail-flick-cat::after, .keyboard-cat {
         animation: none !important;
         transition: none !important;
     }
-    
-    .tumbling-cat.tumble {
-        display: none;
-    }
-    
-    .surprise-cat.peek {
-        display: none;
-    }
-    
-    body.scrolled .nav-cat {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-    
-    .corner-cat:hover {
-        transform: scale(1.1);
-    }
+    .tumbling-cat.tumble, .surprise-cat.peek, .spawned-cat, .keyboard-cat.typing { display: none !important; }
+    body.scrolled .nav-cat { opacity: 1; transform: translateY(0) scale(1); }
+    .corner-cat:hover { transform: scale(1.1); }
 }
 
-/* ===========================
-   LIGHT MODE SPECIFIC ADJUSTMENTS
-   =========================== */
+/* Z-Index Management & Utils */
+.will-animate { will-change: transform, opacity; }
 
-body.light .corner-cat {
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
-}
-
-body.light .sleeping-cat {
-    filter: drop-shadow(0 2px 4px rgba(147, 51, 234, 0.3));
-}
-
-/* ===========================
-   HOVER EFFECTS & INTERACTIONS
-   =========================== */
-
-/* Add subtle glow to cats on hover */
-.corner-cat:hover,
-.surprise-cat.peek:hover,
-.sleeping-cat:hover {
-    filter: drop-shadow(0 0 12px rgba(14, 165, 233, 0.7));
-}
-
-body.light .corner-cat:hover,
-body.light .surprise-cat.peek:hover,
-body.light .sleeping-cat:hover {
-    filter: drop-shadow(0 0 12px rgba(147, 51, 234, 0.5));
-}
-
-/* Tumbling cat rotation variety */
-.tumbling-cat.tumble:nth-child(odd) {
-    animation-direction: reverse;
-}
-
-/* Cat meow effect (visual feedback on click) */
-.corner-cat:active,
-.sleeping-cat:active {
-    animation: catMeow 0.3s ease-in-out;
-}
-
-@keyframes catMeow {
-    0%, 100% {
-        transform: scale(1.25);
-    }
-    50% {
-        transform: scale(1.4);
-    }
-}
-
-/* ===========================
-   PERFORMANCE OPTIMIZATIONS
-   =========================== */
-
-/* Use GPU acceleration for smoother animations */
-.tumbling-cat,
-.corner-cat,
-.nav-cat,
-.sleeping-cat,
-.surprise-cat,
-.spawned-cat,
-.paw-print {
+.tumbling-cat, .corner-cat, .nav-cat, .sleeping-cat, .surprise-cat, .spawned-cat, .paw-print, .tail-flick-cat::after, .keyboard-cat, .peeking-cat {
     will-change: transform, opacity;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-}
-
-/* ===========================
-   Z-INDEX MANAGEMENT
-   =========================== */
-
-/* Ensure proper layering */
-.paw-print {
-    z-index: 1000;
-}
-
-.surprise-cat {
-    z-index: 1000;
-}
-
-.tumbling-cat {
-    z-index: 998;
-}
-
-.spawned-cat {
-    z-index: 1001;
-}
-
-.corner-cat {
-    z-index: 5;
-}
-
-.nav-cat {
-    z-index: auto;
-}
-
-.sleeping-cat {
-    z-index: auto;
-}
-
-/* ===========================
-   PRINT STYLES
-   =========================== */
-
-@media print {
-    .tumbling-cat,
-    .corner-cat,
-    .nav-cat,
-    .sleeping-cat,
-    .surprise-cat,
-    .spawned-cat,
-    .paw-print {
-        display: none !important;
-    }
 }

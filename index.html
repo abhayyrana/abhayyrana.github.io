@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/motion.css">
+    <link rel="stylesheet" href="css/cat.css">
 </head>
 
 <body>
@@ -21,6 +22,7 @@
             <div class="logo-section">
                 <div class="logo fade-in">AR</div>
                 <div class="logo-name">Abhay Rana</div>
+                <div class="cat-sprite nav-cat white-cat"></div>
             </div>
             <ul class="nav-links">
                 <li class="slide-in" style="animation-delay: 0.1s;"><a href="#home">Home</a></li>
@@ -39,6 +41,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="cat-sprite corner-cat orange-cat top-right"></div>
         <div class="gradient-orb orb-1"></div>
         <div class="gradient-orb orb-2"></div>
         <div class="hero-content">
@@ -82,8 +85,9 @@
 
     <!-- About Section -->
     <section id="about">
+        <div class="cat-sprite corner-cat white-cat bottom-left"></div>
         <div class="gradient-orb orb-1"></div>
-        <h2 class="section-title fade-in-up">About <span class="gradient-text">Me</span></h2>
+        <h2 class="section-title fade-in-up">About <span class="gradient-text">Me</span> <div class="cat-sprite tail-flick-cat white-cat"></div></h2>
         <p class="section-desc fade-in-up" style="animation-delay: 0.1s;">Aspiring robotics and AI engineer with expertise in Python, 
             data analytics, 3D CAD design, AI, and ML research. Proven ability to contribute to product development projects, be it a 
             coding project or hardware project development. Committed to leveraging technical skills for impactful innovations.</p>
@@ -452,7 +456,7 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="gradient-orb orb-2"></div>
-        <h2 class="section-title fade-in-up">Technical <span class="gradient-text">Skills</span></h2>
+        <h2 class="section-title fade-in-up">Technical <span class="gradient-text">Skills</span> <div class="cat-sprite tail-flick-cat white-cat"></div></h2>
         <p class="section-desc fade-in-up" style="animation-delay: 0.1s;">Technologies, tools, and frameworks I use to build projects and explore new ideas in
             robotics and AI. Hover over each skill to see its logo!</p>
 
@@ -535,7 +539,9 @@
         <h2 class="section-title fade-in-up">Get In <span class="gradient-text">Touch</span></h2>
         <p class="section-desc fade-in-up" style="animation-delay: 0.1s;">Have a project in mind or want to collaborate? Feel free to reach out!</p>
 
-        <form class="contact-form fade-in-up" id="contact-form" style="animation-delay: 0.2s;">
+        <div style="position: relative; max-width: 600px; margin: 0 auto;">
+            <div class="cat-sprite keyboard-cat black-cat" id="form-cat" style="top: -35px; right: 20px;"></div>
+            <form class="contact-form fade-in-up" id="contact-form" style="animation-delay: 0.2s;">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -553,10 +559,12 @@
 
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
+        <div class="cat-sprite sleeping-cat gray-cat"></div>
         <p>&copy; 2025 Abhay Rana. Built with passion for AI and Robotics.</p>
     </footer>
 
@@ -660,6 +668,105 @@
                 badge.style.setProperty('--skill-icon', `url(${iconUrl})`);
             }
         });
+
+        // --- ENHANCED CAT INTERACTIONS ---
+
+        // Tumbling and Surprise Cats Initialization
+        const tumblingCat = document.createElement('div');
+        tumblingCat.className = 'cat-sprite tumbling-cat white-cat';
+        document.body.appendChild(tumblingCat);
+
+        const surpriseCat = document.createElement('div');
+        surpriseCat.className = 'cat-sprite surprise-cat orange-cat';
+        document.body.appendChild(surpriseCat);
+
+        let tumbleTriggered = false;
+        let surpriseTriggered = false;
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+
+            // Trigger tumbling cat
+            if (scrolled > 1000 && !tumbleTriggered) {
+                tumblingCat.classList.add('tumble');
+                tumbleTriggered = true;
+                setTimeout(() => {
+                    tumblingCat.classList.remove('tumble');
+                    tumbleTriggered = false;
+                }, 4000);
+            }
+
+            // Trigger surprise peeking cat
+            if (scrolled > 2000 && !surpriseTriggered) {
+                surpriseCat.classList.add('peek');
+                surpriseTriggered = true;
+                setTimeout(() => {
+                    surpriseCat.classList.remove('peek');
+                }, 3000);
+            }
+        });
+
+        // Avatar Triple Click Easter Egg
+        const avatar = document.querySelector('.avatar');
+        let clickCount = 0;
+        let clickTimer;
+
+        avatar.addEventListener('click', (e) => {
+            clickCount++;
+            clearTimeout(clickTimer);
+
+            if (clickCount === 3) {
+                spawnCats(e.pageX, e.pageY);
+                clickCount = 0;
+            } else {
+                clickTimer = setTimeout(() => { clickCount = 0; }, 500);
+            }
+        });
+
+        function spawnCats(x, y) {
+            const colors = ['white-cat', 'orange-cat', 'gray-cat', 'black-cat', 'brown-cat'];
+            for (let i = 0; i < 8; i++) {
+                const cat = document.createElement('div');
+                cat.className = `cat-sprite spawned-cat ${colors[i % colors.length]}`;
+                cat.style.left = x + 'px';
+                cat.style.top = y + 'px';
+                document.body.appendChild(cat);
+                setTimeout(() => cat.remove(), 2500);
+            }
+        }
+
+        // Keyboard Cat for Form
+        const formCat = document.getElementById('form-cat');
+        const formInputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
+
+        formInputs.forEach(input => {
+            input.addEventListener('focus', () => formCat.classList.add('typing'));
+            input.addEventListener('blur', () => formCat.classList.remove('typing'));
+        });
+
+        // Paw Prints on Click
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('button') || e.target.closest('a') || e.target.closest('input') || e.target.closest('textarea')) return;
+
+            const paw = document.createElement('div');
+            paw.className = 'paw-print paw-sprite';
+            paw.style.left = (e.pageX - 10) + 'px';
+            paw.style.top = (e.pageY - 10) + 'px';
+            paw.style.transform = `rotate(${Math.random() * 360}deg)`;
+            document.body.appendChild(paw);
+            setTimeout(() => paw.remove(), 2000);
+        });
+
+        // Card Peeking Cats Injection
+        document.querySelectorAll('.card, .project-card').forEach(card => {
+            const peeker = document.createElement('div');
+            peeker.className = 'cat-sprite peeking-cat orange-cat';
+            peeker.style.top = '10px';
+            peeker.style.right = '10px';
+            card.appendChild(peeker);
+        });
+
+        // --- END CAT INTERACTIONS ---
 
         // Card hover interactions for About and Education sections
         const cards = document.querySelectorAll('.card');
