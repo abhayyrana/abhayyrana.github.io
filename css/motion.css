@@ -52,20 +52,16 @@ body.scrolled .logo-name {
 
 .card {
     /* Smooth, slow transitions for ALL properties */
-    transition: flex 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
-                transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
-                opacity 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
-                box-shadow 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
-                width 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
-                min-width 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: flex 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    flex: 1 1 auto;
     transform: scale(1);
     opacity: 1;
-    /* Prevent height expansion on non-hovered cards */
-    align-self: start;
     /* Ensure smooth width transitions */
-    width: 100%;
     min-width: 0;
 }
 
@@ -75,16 +71,16 @@ body.scrolled .logo-name {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-header h3 {
     margin-top: 0.5rem;
-    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-icon {
-    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Card content (hidden by default) */
@@ -92,15 +88,15 @@ body.scrolled .logo-name {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
-                opacity 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
-                margin-top 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                margin-top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 0;
 }
 
 .card-content p {
     color: #d1d5db;
-    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.light .card-content p {
@@ -109,7 +105,7 @@ body.light .card-content p {
 
 /* When card is expanded (hovered) - Only THIS card grows in height */
 .card.expand {
-    flex: 2 1 auto; /* Width expansion */
+    flex: 2 1 calc(50% - 0.75rem); /* Width expansion */
     transform: scale(1.05);
     z-index: 10;
     opacity: 1;
@@ -123,7 +119,7 @@ body.light .card-content p {
 
 /* When other cards shrink - They shrink in WIDTH only, NOT height */
 .card.shrink {
-    flex: 0.7 1 auto; /* Width contraction */
+    flex: 0.5 1 calc(50% - 0.75rem); /* Width contraction */
     opacity: 0.6;
     transform: scale(0.95); /* Slight scale down */
 }
@@ -442,28 +438,12 @@ body.light .timeline-content li {
    =========================== */
 
 .about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     max-width: 64rem;
     margin: 0 auto;
-    /* Smooth, slow width transitions with soft easing */
-    transition: grid-template-columns 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    align-items: start; /* Prevent vertical alignment issues */
-}
-
-/* When one card expands, adjust grid width smoothly */
-.about-grid:has(.card.expand) {
-    grid-template-columns: 1fr 2fr;
-}
-
-.about-grid:has(.card:first-child.expand) {
-    grid-template-columns: 2fr 1fr;
-}
-
-/* No hover state - return to equal columns smoothly */
-.about-grid:not(:has(.card.expand)) {
-    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
 }
 
 /* ===========================
@@ -487,11 +467,7 @@ body.light .timeline-content li {
     
     /* Cards stack vertically on mobile */
     .about-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .about-grid:has(.card.expand) {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
     
     .card.shrink {
