@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    <!-- Custom Magnetic Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-glow"></div>
+
     <!-- Progress Bar -->
     <div id="progress-bar"></div>
 
@@ -46,12 +50,18 @@
                 <div class="avatar-inner">AR</div>
             </div>
             <h1 class="fade-in-up" style="animation-delay: 0.2s;">Abhay Rana</h1>
-            <p class="subtitle fade-in-up" style="animation-delay: 0.3s;">B.Tech in Robotics & Artificial Intelligence</p>
-            <p class="with mini subtitle fade-in-up" style="animation-delay: 0.4s;">with</p>
-            <p class="mini subtitle fade-in-up" style="animation-delay: 0.4s;">Minors in IoT and Real-Time Embedded Systems</p>
-            <p class="description fade-in-up" style="animation-delay: 0.5s;"><a href="https://kjsce.somaiya.edu/en/" target="_blank">K.J. Somaiya College of Engineering, Mumbai</a></p>
 
-            <div class="social-links fade-in-up" style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; animation-delay: 0.6s;">
+            <!-- Typewriter cycling roles -->
+            <p class="typewriter-role-text fade-in-up" style="animation-delay: 0.3s;">
+                <span id="typewriter-role"></span><span class="typewriter-cursor">|</span>
+            </p>
+
+            <p class="subtitle fade-in-up" style="animation-delay: 0.4s;">B.Tech in Robotics & Artificial Intelligence</p>
+            <p class="with mini subtitle fade-in-up" style="animation-delay: 0.5s;">with</p>
+            <p class="mini subtitle fade-in-up" style="animation-delay: 0.5s;">Minors in IoT and Real-Time Embedded Systems</p>
+            <p class="description fade-in-up" style="animation-delay: 0.6s;"><a href="https://kjsce.somaiya.edu/en/" target="_blank">K.J. Somaiya College of Engineering, Mumbai</a></p>
+
+            <div class="social-links fade-in-up" style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; animation-delay: 0.7s;">
                 <a href="https://github.com/abhayyrana" target="_blank" class="social-btn float" style="display: flex; align-items: center; justify-content: center; 
                             width: 50px; height: 50px; border-radius: 50%; 
                             background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); 
@@ -269,103 +279,216 @@
         </p>
 
         <div class="projects-grid">
-            <div class="project-card fade-in-up" style="animation-delay: 0.2s;">
-                <div class="project-header">
-                    <i class="fa-solid fa-robot project-icon"></i>
-                    <a href="https://github.com/abhayyrana" target="_blank" class="github-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <h3>Line Following Robot</h3>
-                <p>An autonomous robot using Arduino and OpenCV for real-time path detection and navigation with PID control.</p>
-                <div class="project-tags">
-                    <span class="tag">Arduino</span>
-                    <span class="tag">OpenCV</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Computer Vision</span>
+
+            <!-- Card 1 -->
+            <div class="project-card-wrapper fade-in-up" style="animation-delay: 0.2s;">
+                <div class="project-card">
+                    <div class="card-face card-front">
+                        <div class="project-header">
+                            <i class="fa-solid fa-robot project-icon"></i>
+                        </div>
+                        <h3>Line Following Robot</h3>
+                        <p>An autonomous robot using Arduino and OpenCV for real-time path detection and navigation with PID control.</p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                        <div class="flip-hint">Click to flip &nbsp;<i class="fa-solid fa-rotate"></i></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back-content">
+                            <h3>Line Following Robot</h3>
+                            <div class="back-details">
+                                <p><i class="fa-solid fa-calendar-days"></i> <strong>Year:</strong> 2024</p>
+                                <p><i class="fa-solid fa-microchip"></i> <strong>Stack:</strong> Arduino Uno, Python, OpenCV, PID Control</p>
+                                <p><i class="fa-solid fa-circle-info"></i> Autonomous navigation using camera-based line detection with custom PID tuning.</p>
+                            </div>
+                            <div class="card-back-cta">
+                                <a href="https://github.com/abhayyrana" target="_blank" class="cta-btn cta-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-card fade-in-up" style="animation-delay: 0.3s;">
-                <div class="project-header">
-                    <i class="fa-solid fa-brain project-icon"></i>
-                    <a href="https://github.com/abhayyrana" target="_blank" class="github-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <h3>ML Image Classifier</h3>
-                <p>Deep learning model for image classification using TensorFlow and CNNs, achieving 94% accuracy on test data.</p>
-                <div class="project-tags">
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Neural Networks</span>
-                </div>
-            </div>
-
-            <div class="project-card fade-in-up" style="animation-delay: 0.4s;">
-                <div class="project-header">
-                    <i class="fa-solid fa-microchip project-icon"></i>
-                    <a href="https://github.com/abhayyrana" target="_blank" class="github-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <h3>IoT Home Automation</h3>
-                <p>Smart home system with real-time monitoring and control using ESP32, sensors, and a React-based dashboard.</p>
-                <div class="project-tags">
-                    <span class="tag">IoT</span>
-                    <span class="tag">ESP32</span>
-                    <span class="tag">React</span>
-                    <span class="tag">MQTT</span>
-                </div>
-            </div>
-
-            <div class="project-card fade-in-up" style="animation-delay: 0.5s;">
-                <div class="project-header">
-                    <i class="fa-solid fa-eye project-icon"></i>
-                    <a href="https://github.com/abhayyrana" target="_blank" class="github-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <h3>Object Detection System</h3>
-                <p>Real-time object detection using YOLO algorithm for robotics applications with custom-trained models.</p>
-                <div class="project-tags">
-                    <span class="tag">YOLO</span>
-                    <span class="tag">OpenCV</span>
-                    <span class="tag">Deep Learning</span>
+            <!-- Card 2 -->
+            <div class="project-card-wrapper fade-in-up" style="animation-delay: 0.3s;">
+                <div class="project-card">
+                    <div class="card-face card-front">
+                        <div class="project-header">
+                            <i class="fa-solid fa-brain project-icon"></i>
+                        </div>
+                        <h3>ML Image Classifier</h3>
+                        <p>Deep learning model for image classification using TensorFlow and CNNs, achieving 94% accuracy on test data.</p>
+                        <div class="project-tags">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                        <div class="flip-hint">Click to flip &nbsp;<i class="fa-solid fa-rotate"></i></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back-content">
+                            <h3>ML Image Classifier</h3>
+                            <div class="back-details">
+                                <p><i class="fa-solid fa-calendar-days"></i> <strong>Year:</strong> 2024</p>
+                                <p><i class="fa-solid fa-microchip"></i> <strong>Stack:</strong> TensorFlow, Keras, Python, CNN</p>
+                                <p><i class="fa-solid fa-circle-info"></i> 94% test accuracy via transfer learning and a custom CNN architecture.</p>
+                            </div>
+                            <div class="card-back-cta">
+                                <a href="https://github.com/abhayyrana" target="_blank" class="cta-btn cta-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-card fade-in-up" style="animation-delay: 0.6s;">
-                <div class="project-header">
-                    <i class="fa-solid fa-chart-line project-icon"></i>
-                    <a href="https://github.com/abhayyrana" target="_blank" class="github-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <h3>Data Analytics Dashboard</h3>
-                <p>Interactive visualization tool for analyzing robotics sensor data using Pandas, Matplotlib, and Plotly.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Pandas</span>
-                    <span class="tag">Plotly</span>
+            <!-- Card 3 -->
+            <div class="project-card-wrapper fade-in-up" style="animation-delay: 0.4s;">
+                <div class="project-card">
+                    <div class="card-face card-front">
+                        <div class="project-header">
+                            <i class="fa-solid fa-microchip project-icon"></i>
+                        </div>
+                        <h3>IoT Home Automation</h3>
+                        <p>Smart home system with real-time monitoring and control using ESP32, sensors, and a React-based dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">React</span>
+                            <span class="tag">MQTT</span>
+                        </div>
+                        <div class="flip-hint">Click to flip &nbsp;<i class="fa-solid fa-rotate"></i></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back-content">
+                            <h3>IoT Home Automation</h3>
+                            <div class="back-details">
+                                <p><i class="fa-solid fa-calendar-days"></i> <strong>Year:</strong> 2024</p>
+                                <p><i class="fa-solid fa-microchip"></i> <strong>Stack:</strong> ESP32, React, MQTT, Node.js</p>
+                                <p><i class="fa-solid fa-circle-info"></i> Real-time sensor data visualization with remote control via MQTT broker.</p>
+                            </div>
+                            <div class="card-back-cta">
+                                <a href="https://github.com/abhayyrana" target="_blank" class="cta-btn cta-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-card fade-in-up" style="animation-delay: 0.7s;">
-                <div class="project-header">
-                    <i class="fa-solid fa-code project-icon"></i>
-                    <a href="https://github.com/abhayyrana" target="_blank" class="github-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <h3>Portfolio Website</h3>
-                <p>Modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth animations.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML/CSS</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">Responsive Design</span>
+            <!-- Card 4 -->
+            <div class="project-card-wrapper fade-in-up" style="animation-delay: 0.5s;">
+                <div class="project-card">
+                    <div class="card-face card-front">
+                        <div class="project-header">
+                            <i class="fa-solid fa-eye project-icon"></i>
+                        </div>
+                        <h3>Object Detection System</h3>
+                        <p>Real-time object detection using YOLO algorithm for robotics applications with custom-trained models.</p>
+                        <div class="project-tags">
+                            <span class="tag">YOLO</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                        <div class="flip-hint">Click to flip &nbsp;<i class="fa-solid fa-rotate"></i></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back-content">
+                            <h3>Object Detection System</h3>
+                            <div class="back-details">
+                                <p><i class="fa-solid fa-calendar-days"></i> <strong>Year:</strong> 2025</p>
+                                <p><i class="fa-solid fa-microchip"></i> <strong>Stack:</strong> YOLOv8, RT-DETR, Python, OpenCV</p>
+                                <p><i class="fa-solid fa-circle-info"></i> Custom annotated dataset with occlusion augmentation for improved detection accuracy.</p>
+                            </div>
+                            <div class="card-back-cta">
+                                <a href="https://github.com/abhayyrana" target="_blank" class="cta-btn cta-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Card 5 -->
+            <div class="project-card-wrapper fade-in-up" style="animation-delay: 0.6s;">
+                <div class="project-card">
+                    <div class="card-face card-front">
+                        <div class="project-header">
+                            <i class="fa-solid fa-chart-line project-icon"></i>
+                        </div>
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Interactive visualization tool for analyzing robotics sensor data using Pandas, Matplotlib, and Plotly.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Plotly</span>
+                        </div>
+                        <div class="flip-hint">Click to flip &nbsp;<i class="fa-solid fa-rotate"></i></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back-content">
+                            <h3>Data Analytics Dashboard</h3>
+                            <div class="back-details">
+                                <p><i class="fa-solid fa-calendar-days"></i> <strong>Year:</strong> 2024</p>
+                                <p><i class="fa-solid fa-microchip"></i> <strong>Stack:</strong> Python, Pandas, Plotly, Matplotlib</p>
+                                <p><i class="fa-solid fa-circle-info"></i> Interactive charts for sensor data analysis with filtering and export capabilities.</p>
+                            </div>
+                            <div class="card-back-cta">
+                                <a href="https://github.com/abhayyrana" target="_blank" class="cta-btn cta-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="project-card-wrapper fade-in-up" style="animation-delay: 0.7s;">
+                <div class="project-card">
+                    <div class="card-face card-front">
+                        <div class="project-header">
+                            <i class="fa-solid fa-code project-icon"></i>
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p>Modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                        <div class="flip-hint">Click to flip &nbsp;<i class="fa-solid fa-rotate"></i></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-back-content">
+                            <h3>Portfolio Website</h3>
+                            <div class="back-details">
+                                <p><i class="fa-solid fa-calendar-days"></i> <strong>Year:</strong> 2025</p>
+                                <p><i class="fa-solid fa-microchip"></i> <strong>Stack:</strong> HTML, CSS, Vanilla JS, Font Awesome</p>
+                                <p><i class="fa-solid fa-circle-info"></i> Dark-themed portfolio with scroll animations, card flips, and a magnetic cursor.</p>
+                            </div>
+                            <div class="card-back-cta">
+                                <a href="https://github.com/abhayyrana" target="_blank" class="cta-btn cta-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#home" class="cta-btn cta-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="view-more fade-in-up" style="animation-delay: 0.8s;">
@@ -475,71 +598,54 @@
             robotics and AI. Hover over each skill to see its logo!</p>
 
         <div class="skills-container">
-            <!-- Each skill badge has a data-icon attribute where you can add the CDN link to the icon -->
             <div class="skill-badge pop-in" style="animation-delay: 0.1s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
                 <span class="gradient-text">Python</span>
             </div>
-
             <div class="skill-badge pop-in" style="animation-delay: 0.15s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg">
                 <span class="gradient-text">Machine Learning</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.2s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
                 <span class="gradient-text">C/C++</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.25s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">
                 <span class="gradient-text">OpenCV</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.3s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">
                 <span class="gradient-text">TensorFlow</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.35s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
                 <span class="gradient-text">NumPy</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.4s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
                 <span class="gradient-text">Pandas</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.45s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg">
                 <span class="gradient-text">Matplotlib</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.5s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg">
                 <span class="gradient-text">Matlab</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.55s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
                 <span class="gradient-text">VS Code</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.6s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
                 <span class="gradient-text">GitHub</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.65s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
                 <span class="gradient-text">React</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.7s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg">
                 <span class="gradient-text">Tailwind CSS</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.8s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
                 <span class="gradient-text">JavaScript</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.85s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
                 <span class="gradient-text">HTML/CSS</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.9s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
                 <span class="gradient-text">Arduino</span>
             </div>
-            
             <div class="skill-badge pop-in" style="animation-delay: 0.95s;" data-icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg">
                 <span class="gradient-text">Robotics</span>
             </div>
@@ -559,17 +665,14 @@
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
-
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
-
             <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
             </div>
-
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
         </div>
@@ -593,7 +696,6 @@
         themeToggle.addEventListener('click', () => {
             isDark = !isDark;
             body.classList.toggle('light');
-
             const icon = themeToggle.querySelector('i');
             icon.setAttribute('data-lucide', isDark ? 'sun' : 'moon');
             lucide.createIcons();
@@ -601,13 +703,10 @@
 
         // Scroll Progress and Navbar Name Animation
         window.addEventListener('scroll', () => {
-            // Progress bar
             const scrolled = window.scrollY;
             const height = document.documentElement.scrollHeight - window.innerHeight;
             const progress = (scrolled / height) * 100;
             document.getElementById('progress-bar').style.width = progress + '%';
-
-            // Show name in navbar after scrolling 200px
             if (scrolled > 200) {
                 body.classList.add('scrolled');
             } else {
@@ -620,25 +719,16 @@
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
             });
         });
 
         // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('animate-in');
             });
-        }, observerOptions);
+        }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
 
         document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right, .pop-in').forEach(el => {
             observer.observe(el);
@@ -655,72 +745,147 @@
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-links a');
-
             let current = '';
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
+                if (window.scrollY >= section.offsetTop - 200) current = section.getAttribute('id');
             });
-
             navLinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
+                if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
             });
         });
 
         // Skill badge icon loader
         document.querySelectorAll('.skill-badge').forEach(badge => {
             const iconUrl = badge.getAttribute('data-icon');
-            if (iconUrl) {
-                badge.style.setProperty('--skill-icon', `url(${iconUrl})`);
-            }
+            if (iconUrl) badge.style.setProperty('--skill-icon', `url(${iconUrl})`);
         });
 
-
-        // Card hover interactions for About and Education sections
-        const cards = document.querySelectorAll('.card');
-        const timelineItems = document.querySelectorAll('.timeline-item');
-
         // About cards hover effect
+        const cards = document.querySelectorAll('.card');
         cards.forEach(card => {
             card.addEventListener('mouseenter', function() {
-                cards.forEach(c => {
-                    if (c !== this) {
-                        c.classList.add('shrink');
-                    }
-                });
+                cards.forEach(c => { if (c !== this) c.classList.add('shrink'); });
                 this.classList.add('expand');
             });
-
             card.addEventListener('mouseleave', function() {
-                cards.forEach(c => {
-                    c.classList.remove('shrink');
-                    c.classList.remove('expand');
-                });
+                cards.forEach(c => { c.classList.remove('shrink'); c.classList.remove('expand'); });
             });
         });
 
         // Timeline items hover effect
+        const timelineItems = document.querySelectorAll('.timeline-item');
         timelineItems.forEach(item => {
             item.addEventListener('mouseenter', function() {
-                timelineItems.forEach(i => {
-                    if (i !== this) {
-                        i.classList.add('shrink');
-                    }
-                });
+                timelineItems.forEach(i => { if (i !== this) i.classList.add('shrink'); });
                 this.classList.add('expand');
             });
-
             item.addEventListener('mouseleave', function() {
-                timelineItems.forEach(i => {
-                    i.classList.remove('shrink');
-                    i.classList.remove('expand');
-                });
+                timelineItems.forEach(i => { i.classList.remove('shrink'); i.classList.remove('expand'); });
+            });
+        });
+
+        // =============================================
+        // 1. TYPEWRITER CYCLING EFFECT
+        // =============================================
+        const roles = [
+            'Robotics Engineer',
+            'AI Researcher',
+            '3D CAD Designer',
+            'ML Developer',
+            'IoT Builder',
+            'Computer Vision Dev'
+        ];
+        const typewriterEl = document.getElementById('typewriter-role');
+        let roleIndex = 0, charIndex = 0, isDeleting = false;
+        const TYPE_SPEED = 80, DELETE_SPEED = 45, PAUSE_TYPE = 1800, PAUSE_DELETE = 300;
+
+        function typewriterTick() {
+            const current = roles[roleIndex];
+            if (isDeleting) {
+                charIndex--;
+                typewriterEl.textContent = current.slice(0, charIndex);
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    setTimeout(typewriterTick, PAUSE_DELETE);
+                    return;
+                }
+                setTimeout(typewriterTick, DELETE_SPEED);
+            } else {
+                charIndex++;
+                typewriterEl.textContent = current.slice(0, charIndex);
+                if (charIndex === current.length) {
+                    isDeleting = true;
+                    setTimeout(typewriterTick, PAUSE_TYPE);
+                    return;
+                }
+                setTimeout(typewriterTick, TYPE_SPEED);
+            }
+        }
+        setTimeout(typewriterTick, 1200);
+
+        // =============================================
+        // 2. MAGNETIC CURSOR WITH GLOW TRAIL
+        // =============================================
+        const cursorDot  = document.getElementById('cursor-dot');
+        const cursorGlow = document.getElementById('cursor-glow');
+        let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+        });
+
+        (function animateGlow() {
+            glowX += (mouseX - glowX) * 0.10;
+            glowY += (mouseY - glowY) * 0.10;
+            cursorGlow.style.transform = `translate(${glowX}px, ${glowY}px) translate(-50%, -50%)`;
+            requestAnimationFrame(animateGlow);
+        })();
+
+        document.querySelectorAll('a, button, .project-card, .skill-badge, .card, .cert-card, .timeline-item, .social-btn').forEach(el => {
+            el.addEventListener('mouseenter', () => { cursorDot.classList.add('cursor-hover'); cursorGlow.classList.add('cursor-hover'); });
+            el.addEventListener('mouseleave', () => { cursorDot.classList.remove('cursor-hover'); cursorGlow.classList.remove('cursor-hover'); });
+        });
+
+        document.documentElement.style.cursor = 'none';
+        window.addEventListener('touchstart', () => {
+            document.documentElement.style.cursor = '';
+            cursorDot.style.display = 'none';
+            cursorGlow.style.display = 'none';
+        }, { once: true });
+
+        // =============================================
+        // 3 + 4. CARD FLIP (click) + 3D TILT (hover)
+        // =============================================
+        const MAX_TILT = 12;
+
+        document.querySelectorAll('.project-card-wrapper').forEach(wrapper => {
+            const inner = wrapper.querySelector('.project-card');
+
+            // --- TILT on mousemove (only when NOT flipped) ---
+            wrapper.addEventListener('mousemove', (e) => {
+                if (inner.classList.contains('is-flipped')) return;
+                const r = wrapper.getBoundingClientRect();
+                const rotY =  ((e.clientX - r.left  - r.width  / 2) / (r.width  / 2)) * MAX_TILT;
+                const rotX = -((e.clientY - r.top   - r.height / 2) / (r.height / 2)) * MAX_TILT;
+                inner.style.transform = `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale3d(1.04,1.04,1.04)`;
+            });
+
+            wrapper.addEventListener('mouseleave', () => {
+                if (!inner.classList.contains('is-flipped')) {
+                    inner.style.transform = '';
+                }
+            });
+
+            // --- FLIP on click ---
+            wrapper.addEventListener('click', (e) => {
+                // Don't flip when clicking links on the back face
+                if (e.target.closest('a')) return;
+                inner.style.transform = ''; // clear tilt before flipping
+                inner.classList.toggle('is-flipped');
             });
         });
     </script>

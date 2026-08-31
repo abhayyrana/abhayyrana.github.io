@@ -593,3 +593,341 @@ body.light .timeline-content li {
 * {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+/* ============================================================
+   TYPEWRITER CYCLING ROLE TEXT
+   ============================================================ */
+
+.typewriter-role-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    min-height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+}
+
+#typewriter-role {
+    background: linear-gradient(90deg, #0ea5e9, #22c55e, #facc15);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientShift 3s ease infinite;
+}
+
+body.light #typewriter-role {
+    background: linear-gradient(90deg, #0284c7, #16a34a, #ca8a04);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.typewriter-cursor {
+    display: inline-block;
+    color: #0ea5e9;
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 1;
+    margin-left: 1px;
+    position: relative;
+    top: 1px;
+    animation: twCursorBlink 0.75s step-end infinite;
+}
+
+@keyframes twCursorBlink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+/* ============================================================
+   MAGNETIC CURSOR + GLOW TRAIL
+   ============================================================ */
+
+#cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #0ea5e9;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    will-change: transform;
+    box-shadow: 0 0 6px #0ea5e9, 0 0 14px rgba(14,165,233,0.6);
+    transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+#cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    will-change: transform;
+    background: radial-gradient(circle, rgba(14,165,233,0.30) 0%, rgba(34,197,94,0.12) 55%, transparent 72%);
+    border: 1.5px solid rgba(14,165,233,0.35);
+    transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+#cursor-dot.cursor-hover {
+    width: 14px;
+    height: 14px;
+    background: #22c55e;
+    box-shadow: 0 0 10px #22c55e, 0 0 24px rgba(34,197,94,0.7);
+}
+
+#cursor-glow.cursor-hover {
+    width: 68px;
+    height: 68px;
+    border-color: rgba(34,197,94,0.55);
+    background: radial-gradient(circle, rgba(34,197,94,0.28) 0%, rgba(14,165,233,0.10) 55%, transparent 72%);
+}
+
+@media (hover: none) and (pointer: coarse) {
+    #cursor-dot, #cursor-glow { display: none !important; }
+}
+
+/* ============================================================
+   PROJECT CARD FLIP  +  3-D TILT
+   ============================================================ */
+
+/* Grid keeps original layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+/* Outer wrapper: fixed height + perspective for 3-D */
+.project-card-wrapper {
+    perspective: 900px;
+    height: 340px;
+    cursor: pointer;
+}
+
+/* Inner card: the thing that flips and tilts */
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1),
+                box-shadow 0.4s ease;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+
+/* Flip triggered by JS adding .is-flipped class on click */
+.project-card-wrapper .project-card.is-flipped {
+    transform: perspective(900px) rotateY(180deg) !important;
+    box-shadow: 0 20px 50px rgba(14,165,233,0.35);
+}
+
+/* ---- Both faces ---- */
+.card-face {
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+}
+
+/* ---- Front face ---- */
+.card-front {
+    background: rgba(31,41,55,0.65);
+    border: 1px solid #374151;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+body.light .card-front {
+    background: rgba(255,255,255,0.78);
+    border: 1px solid #e5e7eb;
+}
+
+/* Top accent bar */
+.card-front::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    border-radius: 1rem 1rem 0 0;
+}
+.project-card-wrapper:hover .card-front::before { transform: scaleX(1); }
+
+.card-front .project-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.card-front h3 {
+    font-size: 1.25rem;
+    color: white;
+    margin: 0;
+}
+body.light .card-front h3 { color: #111827; }
+
+.card-front p {
+    color: #d1d5db;
+    line-height: 1.55;
+    font-size: 0.93rem;
+    flex: 1;
+    margin: 0;
+}
+body.light .card-front p { color: #4b5563; }
+
+.flip-hint {
+    font-size: 0.72rem;
+    color: rgba(156,163,175,0.55);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: auto;
+}
+body.light .flip-hint { color: rgba(107,114,128,0.55); }
+
+/* ---- Back face ---- */
+.card-back {
+    background: linear-gradient(135deg,
+        rgba(14,165,233,0.18) 0%,
+        rgba(31,41,55,0.95)   45%,
+        rgba(34,197,94,0.12)  100%);
+    border: 1px solid rgba(14,165,233,0.42);
+    backdrop-filter: blur(16px);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8rem;
+}
+
+body.light .card-back {
+    background: linear-gradient(135deg,
+        rgba(14,165,233,0.10)  0%,
+        rgba(255,255,255,0.96) 45%,
+        rgba(34,197,94,0.08)   100%);
+    border: 1px solid rgba(14,165,233,0.28);
+}
+
+.card-back-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card-back-content h3 {
+    font-size: 1.12rem;
+    background: linear-gradient(to right, #38bdf8, #4ade80);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 0.2rem;
+}
+
+.back-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    flex: 1;
+}
+
+.back-details p {
+    color: #d1d5db;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    margin: 0;
+    display: flex;
+    gap: 0.45rem;
+    align-items: flex-start;
+}
+body.light .back-details p { color: #374151; }
+
+.back-details p i {
+    color: #0ea5e9;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-size: 0.83rem;
+}
+
+.card-back-cta {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    margin-top: 0.3rem;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 1.05rem;
+    border-radius: 9999px;
+    font-size: 0.87rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cta-github {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: white;
+}
+body.light .cta-github {
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.14);
+    color: #111827;
+}
+.cta-github:hover {
+    background: rgba(14,165,233,0.28);
+    border-color: #0ea5e9;
+    color: #38bdf8;
+}
+
+.cta-demo {
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
+    border: none;
+    color: white;
+}
+.cta-demo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(14,165,233,0.45);
+}
+
+/* ---- Responsive: disable 3-D on small screens ---- */
+@media (max-width: 768px) {
+    .project-card-wrapper {
+        height: auto;
+        min-height: 260px;
+        perspective: none;
+    }
+    .project-card {
+        transform-style: flat;
+        height: auto;
+    }
+    .card-back   { display: none; }
+    .card-front  { position: static; }
+    .flip-hint   { display: none; }
+    .project-card-wrapper .project-card.is-flipped { transform: none !important; }
+    #cursor-dot, #cursor-glow { display: none !important; }
+}
