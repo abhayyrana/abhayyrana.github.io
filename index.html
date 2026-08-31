@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/motion.css">
+    <link rel="stylesheet" href="css/enhancements.css">
 </head>
 
 <body>
+    <!-- Particle / Neural-network background canvas -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
     <!-- Custom Magnetic Cursor -->
     <div id="cursor-dot"></div>
     <div id="cursor-glow"></div>
@@ -784,7 +788,6 @@
                 timelineItems.forEach(i => { i.classList.remove('shrink'); i.classList.remove('expand'); });
             });
         });
-
         // =============================================
         // 1. TYPEWRITER CYCLING EFFECT
         // =============================================
@@ -856,6 +859,108 @@
             cursorDot.style.display = 'none';
             cursorGlow.style.display = 'none';
         }, { once: true });
+
+        // =============================================
+        // NEW A. PARTICLE / NEURAL-NETWORK CANVAS
+        // =============================================
+        (function initParticles() {
+            const canvas = document.getElementById('particle-canvas');
+            const ctx    = canvas.getContext('2d');
+
+            const COLORS = { dot: '#0ea5e9', line: '#0ea5e9' };
+            const COUNT  = 80;
+            const MAX_DIST = 140;
+            const MOUSE_RADIUS = 120;
+            const MOUSE_FORCE  = 0.04;
+
+            let W, H, mouse = { x: -9999, y: -9999 };
+
+            function resize() {
+                W = canvas.width  = window.innerWidth;
+                H = canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            // Track mouse only for interaction (not canvas pointer-events, handled via document)
+            document.addEventListener('mousemove', e => {
+                mouse.x = e.clientX;
+                mouse.y = e.clientY;
+            });
+            document.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+
+            // Particles
+            const particles = Array.from({ length: COUNT }, () => ({
+                x:  Math.random() * window.innerWidth,
+                y:  Math.random() * window.innerHeight,
+                vx: (Math.random() - 0.5) * 0.45,
+                vy: (Math.random() - 0.5) * 0.45,
+                r:  Math.random() * 2 + 1.2,
+            }));
+
+            function isDark() { return !document.body.classList.contains('light'); }
+
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+
+                const dotColor  = isDark() ? '#0ea5e9' : '#0284c7';
+                const lineColor = isDark() ? '14,165,233' : '2,132,199';
+
+                // Update + draw particles
+                for (let i = 0; i < COUNT; i++) {
+                    const p = particles[i];
+
+                    // Soft mouse repulsion
+                    const dx = p.x - mouse.x;
+                    const dy = p.y - mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < MOUSE_RADIUS) {
+                        p.vx += (dx / dist) * MOUSE_FORCE;
+                        p.vy += (dy / dist) * MOUSE_FORCE;
+                    }
+
+                    // Speed cap
+                    const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+                    if (speed > 1.2) { p.vx *= 1.2 / speed; p.vy *= 1.2 / speed; }
+
+                    p.x += p.vx;
+                    p.y += p.vy;
+
+                    // Wrap edges
+                    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+                    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+
+                    // Draw dot
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = dotColor;
+                    ctx.globalAlpha = 0.75;
+                    ctx.fill();
+                    ctx.globalAlpha = 1;
+                }
+
+                // Draw connecting lines
+                for (let i = 0; i < COUNT; i++) {
+                    for (let j = i + 1; j < COUNT; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const d  = Math.sqrt(dx * dx + dy * dy);
+                        if (d < MAX_DIST) {
+                            const alpha = (1 - d / MAX_DIST) * 0.35;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(${lineColor},${alpha})`;
+                            ctx.lineWidth = 0.8;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
 
         // =============================================
         // 3 + 4. CARD FLIP (click) + 3D TILT (hover)
