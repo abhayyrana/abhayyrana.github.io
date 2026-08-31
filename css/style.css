@@ -581,49 +581,25 @@ body.light .timeline-item li {
 }
 
 .project-card {
-    background: rgba(31, 41, 55, 0.6);
-    border: 1px solid #374151;
-    border-radius: 1rem;
-    padding: 2rem;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Flip card inner: 3D context must not be flattened.
+       No backdrop-filter, overflow:hidden, or filter here — they break preserve-3d. */
     position: relative;
-    overflow: hidden;
+    border-radius: 1rem;
+    transform-style: preserve-3d;
+    transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1),
+                box-shadow 0.4s ease;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
 }
 
 body.light .project-card {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid #e5e7eb;
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(to right, #0ea5e9, #22c55e);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover::before {
-    transform: scaleX(1);
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.35);
-    border-color: rgba(14, 165, 233, 0.6);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
 .project-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .project-icon {
@@ -632,7 +608,7 @@ body.light .project-card {
     transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-icon {
+.project-card-wrapper:hover .project-icon {
     transform: scale(1.1) rotate(5deg);
 }
 
@@ -646,26 +622,6 @@ body.light .project-card {
 .github-link:hover {
     color: #0ea5e9;
     transform: scale(1.2);
-}
-
-.project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-body.light .project-card h3 {
-    color: #111827;
-}
-
-.project-card p {
-    color: #d1d5db;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-body.light .project-card p {
-    color: #4b5563;
 }
 
 .project-tags {
